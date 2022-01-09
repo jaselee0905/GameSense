@@ -413,7 +413,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
      SCHEDULE             
   -----------------------------------------*/
 
-  .schedule {
+  .action {
     background: var(--dark-color);
   }
 
@@ -666,4 +666,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     .contact h2 span {
       display: block;
     }
+  }
+  .row-m-t{
+    margin-top : 100px
   }
