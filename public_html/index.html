@@ -385,16 +385,24 @@
                     <div class="ml-auto col-lg-5 col-md-6 col-12">
                         <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
 
-                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
-                            <input type="text" class="form-control" name="cf-name" placeholder="Name">
+                        <form action="contact-form-handler.php" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                            <input type="text" class="form-control" name="name" placeholder="Name">
 
-                            <input type="email" class="form-control" name="cf-email" placeholder="Email">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
 
-                            <textarea class="form-control" rows="5" name="cf-message" placeholder="Message"></textarea>
+                            <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
 
                             <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
                         </form>
+                         <script language="JavaScript">
+                        var frmvalidator  = new Validator("contactform");
+                        frmvalidator.addValidation("name","req","Please provide your name");
+                        frmvalidator.addValidation("email","req","Please provide your email");
+                        frmvalidator.addValidation("email","email",
+                          "Please enter a valid email address");
+                        </script>
                     </div>
+             
 
                     <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
                         <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Keep up to date</h2>
